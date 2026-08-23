@@ -238,7 +238,7 @@ function finalizarPedido() {
         );
     }
 
-    let message = "*NOVO PEDIDO - REAL ESFIRRAS*%0A%0A";
+    let message = "*NOVO PEDIDO - REAL ESFIHAS*%0A%0A";
 
     carrinho.forEach(item => {
         const subtotal = item.preco * item.quantidade;
@@ -307,4 +307,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.alterarQuantidade = alterarQuantidade;
     window.removerItem = removerItem;
     window.removerTodos = removerTodos;
-});
+})

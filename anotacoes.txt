@@ -224,3 +224,15 @@ function voltarAoTopo() {
 </body>
 
 </html>
+
+
+\*     <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
+          <img class="img-fluid rounded mb-2" src="img/bebidas-logos/agua3.png" alt="Água">
+          <strong class="d-block h5">Água 500ml</strong>
+          <p class="small text-muted">Com ou Sem Gás</p>
+          <select class="form-select form-select-sm mb-2 select-preco">
+            <option value="2.00">Sem gás - R$ 2,00</option>
+            <option value="3.00">Com gás - R$ 3,00</option>
+          </select>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </article> //
