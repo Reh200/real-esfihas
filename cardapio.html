@@ -13,7 +13,7 @@
   <header>
     <div class="header-container text-center">
       <h1 class="logo-txt">
-        <img src="img/bebidas-logos/logo3.png" alt="Logo Chefe Express" class="logo-icon">
+        <img src="img/bebidas-logos/logo3.png" alt="Logo Real Esfihas" class="logo-icon">
         Real Esfihas
       </h1>
 
@@ -32,7 +32,6 @@
   </header>
 
   <main class="container">
-
     <h2 class="text-center mb-5">Cardápio Completo</h2>
 
     <section id="salgadas" class="mb-5 categoria-scroll">
@@ -40,159 +39,69 @@
       <div class="grid d-flex flex-wrap justify-content-center gap-4">
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/calabresa.png" alt="Calabresa">
-          <strong class="d-block h5">Calabresa</strong>
-          <p class="small text-muted">Muçarela, calabresa fatiada e cebola</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="34.90">Média - R$ 34,90</option>
-            <option value="39.90">Grande - R$ 39,90</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/marguerita.jpeg" alt="Marguerita">
-          <strong class="d-block h5">Marguerita</strong>
+          <img class="img-fluid rounded mb-2" src="img/margherita.png" alt="Esfirra de Margherita">
+          <strong class="d-block h5">Margherita</strong>
           <p class="small text-muted">Muçarela, tomate e manjericão</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="34.90">Média - R$ 34,90</option>
-            <option value="39.90">Grande - R$ 39,90</option>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="34.90" selected>R$ 34,90</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 34,90</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/calabacon.png" alt="Calabacon">
-          <strong class="d-block h5">Calabacon</strong>
-          <p class="small text-muted">Muçarela, calabresa fatiada e bacon</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="34.90">Média - R$ 34,90</option>
-            <option value="39.90">Grande - R$ 39,90</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/baiana.png" alt="Baiana">
+          <img class="img-fluid rounded mb-2" src="img/baiana.png" alt="Esfirra Baiana">
           <strong class="d-block h5">Baiana</strong>
           <p class="small text-muted">Muçarela, calabresa ralada, pimenta e cebola</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="34.90">Média - R$ 34,90</option>
-            <option value="39.90">Grande - R$ 39,90</option>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="34.90" selected>R$ 34,90</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 34,90</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/a-moda.png" alt="A moda">
-          <strong class="d-block h5">A Moda</strong>
-          <p class="small text-muted">Muçarela, presunto, ovo, palmito, catupiry, milho e bacon</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="38.00">Média - R$ 38,00</option>
-            <option value="43.00">Grande - R$ 43,00</option>
+          <img class="img-fluid rounded mb-2" src="img/frango-milho2.png" alt="Esfirra de Frango">
+          <strong class="d-block h5">Frango com Requeijão Cremoso</strong>
+          <p class="small text-muted">Frango temperadoe rqueijão temperado</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="41.90" selected>R$ 41,90</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 41,90</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/cala-piry.jpeg" alt="Calabresa com catupiry">
-          <strong class="d-block h5">Calabresa com Catupiry</strong>
-          <p class="small text-muted">Muçarela, calabresa ralada e catupiry</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="41.90">Média - R$ 41,90</option>
-            <option value="44.90">Grande - R$ 44,90</option>
+          <img class="img-fluid rounded mb-2" src="img/carne.jpeg" alt="Esfirra de Carne">
+          <strong class="d-block h5">Carne</strong>
+          <p class="small text-muted">Carne moída, cebola e tomate</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="38.00" selected>R$ 38,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 38,00</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/camarao.png" alt="Camarão">
-          <strong class="d-block h5">Camarão</strong>
-          <p class="small text-muted">Muçarela, camarão e catupiry</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="55.00">Média - R$ 55,00</option>
-            <option value="60.00">Grande - R$ 60,00</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/frango-milho2.png" alt="Frango">
-          <strong class="d-block h5">Frango</strong>
-          <p class="small text-muted">Muçarela, frango, bacon, milho e catupiry</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="41.90">Média - R$ 41,90</option>
-            <option value="44.90">Grande - R$ 44,90</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/portuguesa.png" alt="Portuguesa">
-          <strong class="d-block h5">Portuguesa</strong>
-          <p class="small text-muted">Muçarela, presunto, ovo, ervilha e cebola</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="38.00">Média - R$ 38,00</option>
-            <option value="43.00">Grande - R$ 43,00</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/quatro-queijos.jpeg" alt="4 Queijos">
+          <img class="img-fluid rounded mb-2" src="img/quatro-queijos.jpeg" alt="Esfirra 4 Queijos">
           <strong class="d-block h5">4 Queijos</strong>
-          <p class="small text-muted">Muçarela, catupiry, cheddar e parmesão</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="38.00">Média - R$ 38,00</option>
-            <option value="43.00">Grande - R$ 43,00</option>
+          <p class="small text-muted">Muçarela, requeijão cremoso, cheddar e parmesão</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="38.00" selected>R$ 38,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 38,00</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/lombo-catupiry.png" alt="Lombo com Catupiry">
-          <strong class="d-block h5">Lombo com Catupiry</strong>
-          <p class="small text-muted">Lombo suíno, catupiry e muçarela</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="38.00">Média - R$ 38,00</option>
-            <option value="43.00">Grande - R$ 43,00</option>
+          <img class="img-fluid rounded mb-2" src="img/calabresa.jpg" alt="Esfirra de Calabresa">
+          <strong class="d-block h5">Calabresa</strong>
+          <p class="small text-muted">Calabresa ralada, cebola e cebolinha</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="5.90" selected>R$ 5,90</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/atum.jpeg" alt="Atum">
-          <strong class="d-block h5">Atum</strong>
-          <p class="small text-muted">Muçarela, atum, catupiry e cebola</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="38.00">Média - R$ 38,00</option>
-            <option value="43.00">Grande - R$ 43,00</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/peperoni.jpeg" alt="Peperoni">
-          <strong class="d-block h5">Peperoni</strong>
-          <p class="small text-muted">Muçarela e pepperoni</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="48.00">Média - R$ 48,00</option>
-            <option value="53.00">Grande - R$ 53,00</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 5,90</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
       </div>
@@ -203,39 +112,25 @@
       <div class="grid d-flex flex-wrap justify-content-center gap-4">
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/brigadeiro.jpeg" alt="Brigadeiro">
-          <strong class="d-block h5">Brigadeiro</strong>
-          <p class="small text-muted">Brigadeiro e granulado de chocolate</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="30.00">Média - R$ 30,00</option>
-            <option value="35.00">Grande - R$ 35,00</option>
-          </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
-        </article>
-
-        <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/confete.png" alt="Confete">
+          <img class="img-fluid rounded mb-2" src="img/confete.png" alt="Esfirra de Brigadeiro">
           <strong class="d-block h5">Confete</strong>
-          <p class="small text-muted">Creme de avelã, confete e morango</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="45.00">Média - R$ 45,00</option>
-            <option value="50.00">Grande - R$ 50,00</option>
+          <p class="small text-muted">Brigadeiro e confete colorido de cholate ao leite</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="6.50" selected>R$ 6,50</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 6,50</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
-          <img class="img-fluid rounded mb-2" src="img/oreo-kit.png" alt="KitKit Oreo">
-          <strong class="d-block h5">KitKat Oreo</strong>
-          <p class="small text-muted">Chocolate ao leite, pedaços de KitKat Oreo e bolachas Oreo</p>
-          <select class="form-select form-select-sm mb-2 select-preco">
-            <option value="43.00">Média - R$ 43,00</option>
-            <option value="50.00">Grande - R$ 50,00</option>
+          <img class="img-fluid rounded mb-2" src="img/morango.png" alt="Esfirra de Confete">
+          <strong class="d-block h5">Morango com Chocolate</strong>
+          <p class="small text-muted">Cobertura de chocolate ao leite e morango em pedaços</p>
+          <select class="select-preco preco-esfirra" aria-hidden="true">
+            <option value="7.00" selected>R$ 7,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <p class="fw-bold mb-2 preco-visivel">R$ 7,00</p>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
       </div>
@@ -253,8 +148,7 @@
             <option value="14.00">Tradicional - R$ 14,00</option>
             <option value="14.00">Sem Açucar - R$ 14,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
@@ -265,8 +159,7 @@
             <option value="2.00">Sem gás - R$ 2,00</option>
             <option value="3.00">Com gás - R$ 3,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
         <article class="item border p-3 rounded shadow-sm text-center" style="width: 250px;">
@@ -279,18 +172,14 @@
             <option value="8.00">Cola - R$ 8,00</option>
             <option value="8.00">Cola (Sem Açucar) - R$ 8,00</option>
           </select>
-          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao
-            Carrinho</button>
+          <button class="btn btn-primary btn-sm w-100" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
         </article>
 
       </div>
     </section>
-
   </main>
 
-  <button id="back-to-top-btn" onclick="voltarAoTopo()" title="Voltar ao topo">
-    &#8593;
-  </button>
+  <button id="back-to-top-btn" onclick="voltarAoTopo()" title="Voltar ao topo">&#8593;</button>
 
   <footer class="text-center py-4 border-top mt-5">
     <p>&copy; 2026 Real Esfihas 🍕 - Todos os direitos reservados.</p>

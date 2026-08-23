@@ -238,7 +238,7 @@ function finalizarPedido() {
         );
     }
 
-    let message = "*NOVO PEDIDO - ESFIRRAS PALACE*%0A%0A";
+    let message = "*NOVO PEDIDO - REAL ESFIRRAS*%0A%0A";
 
     carrinho.forEach(item => {
         const subtotal = item.preco * item.quantidade;
