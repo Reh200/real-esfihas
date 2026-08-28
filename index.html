@@ -28,16 +28,29 @@
   </header>
 
   <main>
+    <!-- 1. Texto Superior dentro da caixinha de vidro original -->
+    <div class="banner-content">
+      <h2>Sabor real em cada mordida.</h2>
+      <p>Cada esfiha é preparada com ingredientes selecionados e muito carinho para você ter sempre a melhor
+        experiência!</p>
+    </div>
+
+    <!-- 2. Banner de Imagens no Meio -->
     <section class="banner">
-      <img src="img/bebidas-logos/banner8.jpeg" alt="Pizza" class="banner-img">
-      <div class="banner-content">
-        <h2>Sabor real em cada mordida.</h2>
-        <p>Cada esfiha é preparada com ingredientes selecionados e muito carinho para você ter sempre a melhor
-          experiência!</p>
-        <button onclick="window.location.href='cardapio.html'">Ver Cardápio</button>
+      <div class="banner-slides">
+        <img src="img/bebidas-logos/banner8.jpeg" alt="Esfihas Selecionadas" class="banner-img active">
+        <img src="img/bebidas-logos/banner7.jpeg" alt="Esfihas Doces" class="banner-img">
+        <img src="img/bebidas-logos/banner9.jpeg" alt="Esfihas Salgadas" class="banner-img">
       </div>
     </section>
+
+    <!-- 3. Botão na Parte Inferior -->
+    <div class="banner-action">
+      <button onclick="window.location.href='cardapio.html'">Ver Cardápio</button>
+    </div>
   </main>
+
+  <script src="js/script.js"></script>
 
   <footer>
     <p>&copy; 2026 Real Esfihas 🍕 • Todos os direitos reservados</p>
