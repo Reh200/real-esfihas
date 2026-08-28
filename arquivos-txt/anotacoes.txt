@@ -7,7 +7,7 @@ git config --global user.email alinerenata1400@gmail.com
 
   header h1 { font-size: 1.3rem; }
   footer { height: 30px; font-size: 0.75rem; }
-}
+}dfffffffg
 
 /* =================== Footer (Mínimo de Altura) =================== */
 footer {
