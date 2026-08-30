@@ -32,18 +32,61 @@ function finalizarCompra() {
 // =================== CARROSSEL DO BANNER ===================
 document.addEventListener('DOMContentLoaded', () => {
   const bannerImages = document.querySelectorAll('.banner-img');
-  
-  // Executa a lógica apenas se existirem imagens de banner no HTML
+
   if (bannerImages.length > 0) {
     let currentImageIndex = 0;
-    const changeInterval = 4000; // Tempo de troca: 4 segundos
+    const changeInterval = 4000;
 
+    // =================== IMAGENS PC / CELULAR ===================
+    function atualizarImagens() {
+      const isMobile = window.innerWidth <= 768;
+
+      bannerImages.forEach(slide => {
+        const imagem = slide.querySelector('img');
+
+        if (!imagem) return;
+
+        const imagemPC = imagem.dataset.pc;
+        const imagemMobile = imagem.dataset.mobile;
+
+        if (isMobile && imagemMobile) {
+          imagem.src = imagemMobile;
+        } else if (imagemPC) {
+          imagem.src = imagemPC;
+        }
+      });
+    }
+
+    // =================== TROCAR BANNER ===================
     function changeBanner() {
       bannerImages[currentImageIndex].classList.remove('active');
-      currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+
+      currentImageIndex =
+        (currentImageIndex + 1) % bannerImages.length;
+
       bannerImages[currentImageIndex].classList.add('active');
     }
 
+    // =================== INICIALIZAÇÃO ===================
+    atualizarImagens();
+
     setInterval(changeBanner, changeInterval);
+
+    // =================== RESPONSIVIDADE ===================
+    let larguraAnterior = window.innerWidth;
+
+    window.addEventListener('resize', () => {
+      const larguraAtual = window.innerWidth;
+
+      const eraMobile = larguraAnterior <= 768;
+      const agoraMobile = larguraAtual <= 768;
+
+      if (eraMobile !== agoraMobile) {
+        atualizarImagens();
+      }
+
+      larguraAnterior = larguraAtual;
+    });
+
   }
 });
